@@ -33,6 +33,7 @@ class LeanResource extends Command
         Artisan::call("make:controller $model/{$model}Controller --model={$this->argument('model')}");
         Artisan::call("make:request $model/{$model}CreateRequest");
         Artisan::call("make:request $model/{$model}UpdateRequest");
+        Artisan::call("make:factory $model");
 
     }
 
